@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SetPattern from "./components/SetPattern";
+import ConfirmPattern from "./components/ConfirmPattern";
+import EnternPattern from "./components/EnterPattern";
+import ResetPattern from "./components/ResetPattern";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={() => <Redirect to="/SetPattern" />} />
+        <Route path="/SetPattern" exact component={SetPattern} />
+        <Route path="/ConfirmPattern" exact component={ConfirmPattern} />
+        <Route path="/EnterPattern" exact component={EnternPattern} />
+        <Route path="/ResetPattern" exact component={ResetPattern} />
+      </Switch>
+    </BrowserRouter>
   );
-}
-
+};
+console.log("global pattern " + window.pattern);
 export default App;

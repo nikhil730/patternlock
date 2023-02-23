@@ -1,0 +1,10 @@
+
+.promt-paper{
+    margin-top: 200px;
+    justify-content: center;
+    height: 200px;
+    min-width: min-content;
+}
+.button{
+    display: flex;
+}

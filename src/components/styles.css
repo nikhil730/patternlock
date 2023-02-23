@@ -1,0 +1,30 @@
+body{
+    background-color: grey;
+}
+.paper{
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.heading{
+    padding: 5px;
+    margin-bottom: 90px;
+}
+.pattern{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.button{
+    text-align: right;
+    margin-right: 540px;
+}
+.options{
+    margin-left: auto;
+}
+@media(max-width: 400px){
+    .button{
+        text-align: right;
+        margin-right: 40px;
+    }
+}
