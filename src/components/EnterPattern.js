@@ -9,6 +9,8 @@ import "./styles.css";
 import { Button, Box, Select, MenuItem, InputLabel } from "@material-ui/core";
 
 const ConfirmPattern = () => {
+  const localvar = localStorage.getItem("localpattern");
+  console.log("this is localvar " + localvar);
   const [count, setCount] = useState(0);
   const [view, setView] = useState(0);
   const history = useHistory();
@@ -25,7 +27,7 @@ const ConfirmPattern = () => {
     setView(3);
   };
   const enter = () => {
-    if (window.pattern === entrpattern) {
+    if (localvar === entrpattern) {
       setView(1);
     } else {
       setView(2);

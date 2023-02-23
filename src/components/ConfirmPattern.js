@@ -18,6 +18,7 @@ const ConfirmPattern = () => {
   }
   const handleconclick = (e) => {
     if (confirmpattern === window.pattern) {
+      localStorage.setItem("localpattern", confirmpattern);
       e.preventDefault();
       console.log("here");
       setView(1);
