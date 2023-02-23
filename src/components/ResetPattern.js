@@ -41,7 +41,7 @@ const ResetPattern = () => {
   };
   return (
     <div className="paper">
-      <h1 className="heading">Entern the Correct Pattern Reset.</h1>
+      <h1 className="heading">Entern the Correct Pattern to Reset.</h1>
       <div className="pattern">
         <AdPatternLock
           backgroundColor="black"
