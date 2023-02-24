@@ -69,7 +69,6 @@ const ConfirmPattern = () => {
         justifyContent="flex-end"
         alignItems="flex-end"
       >
-        {/* <InputLabel id="label">Options</InputLabel> */}
         <div className="options">
           <label for="select">Options</label>
           <Select labelId="label" id="select" value="options">
@@ -82,12 +81,7 @@ const ConfirmPattern = () => {
           </Select>
         </div>
         {entrpattern.length === 0 ? (
-          <Button
-            onClick={enter}
-            variant="contained"
-            disabled
-            // className="button"
-          >
+          <Button onClick={enter} variant="contained" disabled>
             Enter
           </Button>
         ) : (

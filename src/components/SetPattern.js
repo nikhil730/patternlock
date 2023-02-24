@@ -29,19 +29,9 @@ const SetPattern = () => {
           }}
         />
       </div>
-      <Box
-        display="flex"
-        justifyContent="right"
-        // alignItems="flex-end"
-        className="button"
-      >
+      <Box display="flex" justifyContent="right" className="button">
         {pattern.length === 0 ? (
-          <Button
-            onClick={handleclick}
-            variant="contained"
-            disabled
-            // className="button"
-          >
+          <Button onClick={handleclick} variant="contained" disabled>
             Confirm Pattern
           </Button>
         ) : (

@@ -21,22 +21,10 @@ const ResetPattern = () => {
       e.preventDefault();
       console.log("here");
       setView(1);
-      // return (
-      //   <div>
-      //     <Prompt text="Pattern successfully set" />
-      //   </div>
-      // );
-      //history.push("/EnterPattern");
     } else {
       e.preventDefault();
       console.log("here");
       setView(2);
-      // return (
-      //   <div>
-      //     <Prompt text="Pattern is Incorrect" />
-      //   </div>
-      // );
-      //history.push("/SetPattern");
     }
   };
   return (
@@ -51,27 +39,13 @@ const ResetPattern = () => {
           }}
         />
       </div>
-      <Box
-        display="flex"
-        justifyContent="right"
-        // alignItems="flex-end"
-        className="button"
-      >
+      <Box display="flex" justifyContent="right" className="button">
         {confirmpattern.length === 0 ? (
-          <Button
-            onClick={handleconclick}
-            disabled
-            variant="contained"
-            // className="button"
-          >
+          <Button onClick={handleconclick} disabled variant="contained">
             Next
           </Button>
         ) : (
-          <Button
-            onClick={handleconclick}
-            variant="contained"
-            // className="button"
-          >
+          <Button onClick={handleconclick} variant="contained">
             Next
           </Button>
         )}
