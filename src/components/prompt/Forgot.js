@@ -18,7 +18,7 @@ const Forgot = () => {
   return (
     <Paper className="promt-paper">
       <h1>What is 40+50</h1>
-      <input type="text" id="myText" />
+      <input autoComplete="off" type="text" id="myText" />
       <button onClick={clicked}>Enter</button>
     </Paper>
   );
