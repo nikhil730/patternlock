@@ -12,6 +12,7 @@ const Forgot = () => {
       history.push("./ResetPattern");
     } else {
       e.preventDefault();
+      window.location.reload(false);
       history.push("./EnterPattern");
     }
   };
