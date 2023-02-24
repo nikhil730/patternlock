@@ -18,7 +18,7 @@ const ConfirmPattern = () => {
   if (view === 1) {
     return <Prompt text="Unlocked" link="/SetPattern" />;
   } else if (view === 2) {
-    return <Prompt text="Incorect" link="/SetPattern" />;
+    return <Prompt text="Incorect" from="/EnterPattern" link="/EnterPattern" />;
   } else if (view === 3) {
     return <Forgot />;
   }

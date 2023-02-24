@@ -8,9 +8,14 @@ const Prompt = (props) => {
   const history = useHistory();
   const text = props.text;
   const link = props.link;
+  const from = props.from;
   const counting = props.counting;
   console.log(link);
   const handleclick = (e) => {
+    if (from === link) {
+      e.preventDefault();
+      window.location.reload(false);
+    }
     e.preventDefault();
     history.push(link);
   };
