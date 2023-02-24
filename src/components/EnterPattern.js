@@ -23,7 +23,6 @@ const ConfirmPattern = () => {
     return <Forgot />;
   }
   const forgot = () => {
-    const ans = 4050;
     setView(3);
   };
   const enter = () => {
