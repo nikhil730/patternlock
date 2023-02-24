@@ -5,6 +5,12 @@
     height: 200px;
     min-width: min-content;
 }
+.forgot{
+    padding: 25px;
+}
+.input{
+    text-align: center;
+}
 .text{
     margin-top: 50px;
     text-align: center;

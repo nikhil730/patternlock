@@ -18,8 +18,8 @@ const Forgot = () => {
   };
   return (
     <Paper className="promt-paper">
-      <h1>What is 40+50</h1>
-      <input autoComplete="off" type="text" id="myText" />
+      <h1 className="text forgot">What is 40+50</h1>
+      <input autoComplete="off" type="text" id="myText" className="input" />
       <button onClick={clicked}>Enter</button>
     </Paper>
   );
