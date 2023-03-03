@@ -1,15 +1,13 @@
 import React from "react";
 import AdPatternLock from "ad-pattern-lock";
 import "ad-pattern-lock/dist/main.css";
-import { useHistory } from "react-router-dom";
 import Prompt from "./prompt/Prompt";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles.css";
 import { Button, Box } from "@material-ui/core";
 
 const ConfirmPattern = () => {
   const [view, setView] = useState(0);
-  const history = useHistory();
   const [confirmpattern, setConfirmpattern] = useState([]);
   if (view === 1) {
     return <Prompt text="Pattern successfully set" link="/EnterPattern" />;

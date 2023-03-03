@@ -6,12 +6,12 @@ import { useState } from "react";
 import Prompt from "./prompt/Prompt";
 import Forgot from "./prompt/Forgot";
 import "./styles.css";
-import { Button, Box, Select, MenuItem, InputLabel } from "@material-ui/core";
+import { Button, Box, Select, MenuItem } from "@material-ui/core";
 
 const ConfirmPattern = () => {
   const localvar = localStorage.getItem("localpattern");
   console.log("this is localvar " + localvar);
-  const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
   const [view, setView] = useState(0);
   const history = useHistory();
   const [entrpattern, setEntrpattern] = useState([]);

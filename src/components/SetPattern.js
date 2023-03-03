@@ -3,7 +3,6 @@ import AdPatternLock from "ad-pattern-lock";
 import "ad-pattern-lock/dist/main.css";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
-import { Paper } from "@material-ui/core";
 import "./styles.css";
 import { Button, Box } from "@material-ui/core";
 
