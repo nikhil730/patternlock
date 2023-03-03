@@ -1,6 +1,6 @@
 body{
     background-color: grey;
-    overscroll-behavior: contain;
+    
 }
 .paper{
     align-content: center;
@@ -15,6 +15,7 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    overscroll-behavior: contain;
 }
 .button{
     text-align: right;
